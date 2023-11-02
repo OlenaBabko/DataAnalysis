@@ -17,8 +17,16 @@ pl.colorbar()'''
 pl.colorbar()'''
 
 # 3D view:
+'''ax = pl.axes(projection = '3d')
+ax.plot_surface(X, Y, Z, cmap = 'bwr')'''
+
+# or
+'''x = np.random.random(50)
+y = np.random.random(50)
+z = np.random.random(50)
 ax = pl.axes(projection = '3d')
-ax.plot_surface(X, Y, Z, cmap = 'bwr')
+ax.scatter(x, y, z, color = 'red')'''
+
 
 
 pl.show()
