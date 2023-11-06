@@ -28,5 +28,14 @@ ax = pl.axes(projection = '3d')
 ax.scatter(x, y, z, color = 'red')'''
 
 
+# or
+#%matplotlib qt                         # didnt work
+x = np.linspace(0, 10, 100)
+y = np.linspace(0, 10, 100)
+z = np.sin(x) * np.cos(x)
+
+fig = pl.figure()
+ax = fig.add_subplot(projection = '3d')
+ax.plot(x, y, z)
 
 pl.show()
